@@ -23,7 +23,7 @@ class CardGroupsController {
     }
   }
 
-  static async createUser(req, res) {
+  static async createGroup(req, res) {
     try {
       console.log(req.body);
       const group = await cardGroupsSerivce.create(req.body);
